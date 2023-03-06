@@ -1,21 +1,21 @@
 {
-  "name": "quotes-lib",
+  "name": "user",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/quotes-lib/src",
+  "sourceRoot": "libs/user/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/quotes-lib/**/*.ts"]
+        "lintFilePatterns": ["libs/user/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/quotes-lib/jest.config.ts",
+        "jestConfig": "libs/user/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

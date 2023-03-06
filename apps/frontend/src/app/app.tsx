@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './home/home';
 import Getdashboardinfo from './getdashboardinfo/getdashboardinfo';
 import Getquotesinfo from './getquotesinfo/getquotesinfo';
+import User from './user/user';
 
 export function App() {
   return (
@@ -19,12 +20,16 @@ export function App() {
             <li>
               <Link to="/quotes">Get Quotes Info</Link>
             </li>
+            <li>
+              <Link to="/user">Create new user</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/dashboard" exact component={Getdashboardinfo} />
           <Route path="/quotes" exact component={Getquotesinfo} />
+          <Route path="/user" exact component={User} />
         </Switch>
       </div>
     </BrowserRouter>
