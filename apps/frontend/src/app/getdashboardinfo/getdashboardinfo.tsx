@@ -9,8 +9,8 @@ export function Getdashboardinfo(props: GetdashboardinfoProps) {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios('http://localhost:3333/api');
-      const message = result.data.message;
+      const result = await axios('http://localhost:3333/api/dashboard');
+      const message = result.data;
       setApiResponse(message);
     }
 
@@ -20,7 +20,7 @@ export function Getdashboardinfo(props: GetdashboardinfoProps) {
   return (
     <div className={styles['container']}>
       <h1>Here is your Dashboard Info:</h1>
-      <h1>{JSON.stringify(apiResponse)}</h1>
+      <h1>{apiResponse}</h1>
     </div>
   );
 }
