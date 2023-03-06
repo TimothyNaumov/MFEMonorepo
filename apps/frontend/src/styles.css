@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.app {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  display: flex;
+}
+
+h1 {
+  font-weight: 100;
+  margin: 0;
+}
+
+.app-nav {
+  width: 20vw;
+  margin-right: 20px;
+}
+
+.app-content {
+  flex: 1;
+}
