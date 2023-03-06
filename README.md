@@ -6,7 +6,11 @@
 
 ## Development server
 
-Run `nx serve Backend` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `nx serve Backend` for a dev server hosted on port 3333. The app will automatically reload if you change any of the source files.
+
+There is a frontend app in this workspace as well so you will have to
+
+Run `nx serve frontend` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 
