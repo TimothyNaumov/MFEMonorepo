@@ -3,7 +3,8 @@ import styles from './user.module.css';
 import axios from 'axios';
 import React from 'react';
 
-// import { CreateUserDto } from '@mfe-monorepo/user';
+//uncomment this line to import the CreateUseDto from the user lib located at /libs/user/src/lib/user.dts.ts
+//import { CreateUserDto } from '@mfe-monorepo/user';
 /* eslint-disable-next-line */
 export interface UserProps {}
 
@@ -11,6 +12,7 @@ export function User(props: UserProps) {
   const [createUserSuccessful, setCreateUserSuccessful] = React.useState(false);
 
   async function createUser(data: any) {
+    //set the data to implement the DTO CreateUserDto
     const config = {
       method: 'post',
       maxBodyLength: Infinity,
@@ -29,8 +31,8 @@ export function User(props: UserProps) {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // const data = event.currentTarget as unknown;
-    // createUser(data as CreateUserDto);
+    const data = new FormData(event.currentTarget); //I think you have to cast the event data as a CreateUseDto type to pass it into createUser correctly
+    createUser(data);
   };
 
   return (
