@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mfe-monorepo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@mfe-monorepo/dashboard": ["libs/dashboard/src/index.ts"],
       "@mfe-monorepo/quote": ["libs/quote/src/index.ts"],
       "@mfe-monorepo/quotes-lib": ["libs/quotes-lib/src/index.ts"],

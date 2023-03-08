@@ -4,7 +4,7 @@ import axios from 'axios';
 import React from 'react';
 
 //uncomment this line to import the CreateUseDto from the user lib located at /libs/user/src/lib/user.dts.ts
-//import { CreateUserDto } from '@mfe-monorepo/user';
+import { CreateUserInterface } from '@mfe-monorepo/api-interfaces';
 /* eslint-disable-next-line */
 export interface UserProps {}
 
@@ -31,8 +31,12 @@ export function User(props: UserProps) {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget); //I think you have to cast the event data as a CreateUseDto type to pass it into createUser correctly
-    createUser(data);
+    const data = new FormData(event.currentTarget); //Not entirely sure how to convert this data object that I have from the form into the CreateUserInterface interface so I'm just going to do something simpler
+    const newUser: CreateUserInterface = {
+      email: 'newuser@gmail.com',
+      password: 'abc123',
+    };
+    createUser(newUser);
   };
 
   return (
