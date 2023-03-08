@@ -4,6 +4,7 @@ import Home from './home/home';
 import Getdashboardinfo from './getdashboardinfo/getdashboardinfo';
 import Getquotesinfo from './getquotesinfo/getquotesinfo';
 import User from './user/user';
+import LoadingBar from './loading-bar/loading-bar';
 
 export function App() {
   return (
@@ -23,6 +24,9 @@ export function App() {
             <li>
               <Link to="/user">Create new user</Link>
             </li>
+            <li>
+              <Link to="/loadingbar">View Loading Bar</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -30,6 +34,7 @@ export function App() {
           <Route path="/dashboard" exact component={Getdashboardinfo} />
           <Route path="/quotes" exact component={Getquotesinfo} />
           <Route path="/user" exact component={User} />
+          <Route path="/loadingbar" exact component={LoadingBar} />
         </Switch>
       </div>
     </BrowserRouter>
