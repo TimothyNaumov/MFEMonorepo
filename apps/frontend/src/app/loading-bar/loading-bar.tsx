@@ -42,12 +42,12 @@ export function LoadingBar(props: LoadingBarProps) {
     }
 
     const formData = new FormData();
-    formData.append('image', image);
+    formData.append('file', image);
 
     const config = {
-      headers: {
-        'Content-Type': image.type,
-      },
+      // headers: {
+      //   'Content-Type': image.type,
+      // },
       onUploadProgress: function (progressEvent: any) {
         const { loaded, total } = progressEvent;
         const percentCompleted = (loaded / total) * 100;
@@ -56,8 +56,12 @@ export function LoadingBar(props: LoadingBarProps) {
       },
     };
 
+    // axios
+    //   .post('https://httpbin.org/post', formData, config)
+    //   .then((res) => console.log(res))
+    //   .catch((err) => console.log(err));
     axios
-      .post('https://httpbin.org/post', formData, config)
+      .post('http://localhost:3333/api/file-upload/upload', formData, config)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };

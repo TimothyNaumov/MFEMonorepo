@@ -11,7 +11,7 @@ export interface UserProps {}
 export function User(props: UserProps) {
   const [createUserSuccessful, setCreateUserSuccessful] = React.useState(false);
 
-  async function createUser(data: any) {
+  async function createUser(data: CreateUserInterface) {
     //set the data to implement the DTO CreateUserDto
     const config = {
       method: 'post',
