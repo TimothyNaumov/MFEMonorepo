@@ -1,1 +1,1 @@
-export * from './lib/user.dts';
+export * from './lib/create-user.interface';

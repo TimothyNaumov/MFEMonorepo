@@ -10103,10 +10103,10 @@
   dependencies:
     "typed-assert" "^1.0.8"
 
-"webpack@^4.0.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.11.0", "webpack@^5.12.0", "webpack@^5.75.0", "webpack@>=4.43.0 <6.0.0", "webpack@>=5":
-  "integrity" "sha512-piaIaoVJlqMsPtX/+3KTTO6jfvrSYgauFVdt8cr9LTHKmcq/AMd4mhzsiP7ZF/PGRNPGA8336jldh9l2Kt2ogQ=="
-  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.75.0.tgz"
-  "version" "5.75.0"
+"webpack@^4.0.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.11.0", "webpack@^5.12.0", "webpack@^5.75.0", "webpack@^5.76.1", "webpack@>=4.43.0 <6.0.0", "webpack@>=5":
+  "integrity" "sha512-4+YIK4Abzv8172/SGqObnUjaIHjLEuUasz9EwQj/9xmPPkYJy2Mh03Q/lJfSD3YLzbxy5FeTq5Uw0323Oh6SJQ=="
+  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.76.1.tgz"
+  "version" "5.76.1"
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^0.0.51"
